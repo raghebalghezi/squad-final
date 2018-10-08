@@ -5,7 +5,6 @@ Created on Tue Oct  2 14:56:45 2018
 
 @author: raghebal-ghezi
 """
-import numpy as np
 import pandas as pd
 import re
 from sklearn import linear_model
