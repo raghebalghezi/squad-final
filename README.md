@@ -34,7 +34,7 @@ For computational reasons, I used a small partation of the data (only 38K data p
 
 ```python
 # you can remove the whole thing between the brackets
-small_partion = train2.iloc[2000:40000] 
+small_partion = train2.iloc[:] 
 ```
 
 There may appear some warnings in the code; they are not affecting the code running.
