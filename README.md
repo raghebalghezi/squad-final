@@ -13,20 +13,20 @@ This repo contains an implementation of simple logisitic regression, which is th
   * `python lr.py`
 
 To simplifying the process, and shorten the runtime, I have done the pre-processing in the background, and converted the dataset from `json` format to`csv` . So, `with_pos_overlap_score.csv` contains the following information:
-**answers** : correct answer span
-**context**: supporting paragraph
-**is_impossible**: whether or not the question is answerable
-**plausible_answers**: if unanswerable, what would be the answer from the paragraph? NOT REQUIRED by the task
-**question**: the question prompt
-**sentences**: the sentence-tokenized version of context
-**target**: the index of sentence containing the correct answer span; -1 if question is unanswerable.
-**cosine_sim**: the Cosine similaity score between the question and each of sentences
-**word_overlap**: Jaccard score of the question and each of sentences
-**pred_idx_cos**: the Index of the sentence containing the answer as predicted by `cosine_sim`; i.e. argmax(cosine_sim)
-**pred_idx_wrdovlp**: the Index of the sentence containing the answer as predicted by `word_overlap`; i.e. argmax(word_overlap)
-**pos_tag_sent**: part-of-speech sequence of each sentence
-**pos_tag_quest**: part-of-speech sequence of question
-**pos_tag_ovrlap**:  Jaccard score of the pos_tag_quest and each of pos_tag_sent
+* **answers** : correct answer span
+* **context**: supporting paragraph
+* **is_impossible**: whether or not the question is answerable
+* **plausible_answers**: if unanswerable, what would be the answer from the paragraph? NOT REQUIRED by the task
+* **question**: the question prompt
+* **sentences**: the sentence-tokenized version of context
+* **target**: the index of sentence containing the correct answer span; -1 if question is unanswerable.
+* **cosine_sim**: the Cosine similaity score between the question and each of sentences
+* **word_overlap**: Jaccard score of the question and each of sentences
+* **pred_idx_cos**: the Index of the sentence containing the answer as predicted by `cosine_sim`; i.e. argmax(cosine_sim)
+* **pred_idx_wrdovlp**: the Index of the sentence containing the answer as predicted by `word_overlap`; i.e. argmax(word_overlap)
+* **pos_tag_sent**: part-of-speech sequence of each sentence
+* **pos_tag_quest**: part-of-speech sequence of question
+* **pos_tag_ovrlap**:  Jaccard score of the pos_tag_quest and each of pos_tag_sent
 
 ### Important Note
 
