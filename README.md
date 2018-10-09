@@ -43,44 +43,6 @@ There may appear some warnings in the code; they are not affecting the code runn
 
 **UPDATE** results reported below are on 30% of the data, but i managed to run it on the whole 13k sentence, and I got much better results. Kindly take a look at them.
 
-​             precision    recall  f1-score   support
-
-​       -1.0       1.00      0.99      1.00      2198
-
-​        0.0       0.39      1.00      0.56      2124
-
-​        1.0       0.00      0.00      0.00      1231
-
-​        2.0       0.00      0.00      0.00       808
-
-​        3.0       0.00      0.00      0.00       540
-
-​        4.0       0.00      0.00      0.00       319
-
-​        5.0       0.00      0.00      0.00       169
-
-​        6.0       0.00      0.00      0.00        92
-
-​        7.0       0.00      0.00      0.00        57
-
-​        8.0       0.00      0.00      0.00        23
-
-​        9.0       0.00      0.00      0.00        20
-
-​       10.0       0.00      0.00      0.00        11
-
-​       11.0       0.00      0.00      0.00         4
-
-​       12.0       0.00      0.00      0.00         1
-
-​       14.0       0.00      0.00      0.00         1
-
-​       15.0       0.00      0.00      0.00         1
-
-​       19.0       0.00      0.00      0.00         1
-
-avg / total       0.40      0.57      0.45      7600   
-
 
                  precision    recall  f1-score   support
          -1       1.00      0.99      0.99      8872
