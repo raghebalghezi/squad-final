@@ -13,7 +13,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
-
+from sklearn.metrics import confusion_matrix
 def clean(x):
     return [float(i) for i in re.findall("\s\d.\d*",str(x))]
 
@@ -70,3 +70,4 @@ mul_lr.fit(train_x, train_y)
 print("Multinomial Logistic regression Train Accuracy : ", metrics.accuracy_score(train_y, mul_lr.predict(train_x)))
 print("Multinomial Logistic regression Test Accuracy : ", metrics.accuracy_score(test_y, mul_lr.predict(test_x)))
 print(classification_report(test_y, mul_lr.predict(test_x)))
+print(confusion_matrix(test_y, mul_lr.predict(test_x)))
