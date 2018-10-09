@@ -7,6 +7,7 @@ Created on Tue Oct  2 14:56:45 2018
 """
 import pandas as pd
 import re
+import numpy as np
 from sklearn import linear_model
 from sklearn import metrics
 from sklearn.cross_validation import train_test_split
