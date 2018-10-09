@@ -39,7 +39,9 @@ small_partion = train2.iloc[:]
 
 There may appear some warnings in the code; they are not affecting the code running.
 
-### Results
+### Results: 
+
+**UPDATE** results reported below are on 30% of the data, but i managed to run it on the whole 13k sentence, and I got much better results. Kindly take a look at them.
 
 ​             precision    recall  f1-score   support
 
@@ -77,4 +79,31 @@ There may appear some warnings in the code; they are not affecting the code runn
 
 ​       19.0       0.00      0.00      0.00         1
 
-avg / total       0.40      0.57      0.45      7600      
+avg / total       0.40      0.57      0.45      7600   
+
+ precision    recall  f1-score   support
+
+         -1       1.00      0.99      0.99      8872
+          0       0.47      0.68      0.56      4677
+          1       0.63      0.54      0.58      3869
+          2       0.62      0.55      0.58      3090
+          3       0.62      0.53      0.57      2321
+          4       0.58      0.47      0.52      1412
+          5       0.57      0.48      0.52       799
+          6       0.57      0.49      0.53       429
+          7       0.46      0.33      0.38       247
+          8       0.56      0.38      0.45       124
+          9       0.46      0.37      0.41        89
+         10       0.48      0.32      0.39        50
+         11       0.35      0.21      0.26        34
+         12       0.00      0.00      0.00        11
+         13       0.00      0.00      0.00        15
+         14       0.00      0.00      0.00        10
+         15       0.00      0.00      0.00         4
+         16       0.00      0.00      0.00         5
+         17       0.00      0.00      0.00         2
+         18       0.00      0.00      0.00         1
+         20       0.00      0.00      0.00         2
+         21       0.00      0.00      0.00         1
+
+avg / total       0.72      0.71      0.71     26064
