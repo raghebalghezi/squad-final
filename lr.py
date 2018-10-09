@@ -30,7 +30,7 @@ train2["cosine_sim"]= train2["cosine_sim"].map(clean)
 train2["word_overlap"]= train2["word_overlap"].apply(clean)
 train2["pos_tag_ovrlap"]= train2["pos_tag_ovrlap"].apply(clean)
 # Using a small portion of the data for easy computation
-small_partion = train2.iloc[2000:40000]
+small_partion = train2.iloc[:]
 
 #generating features for classification
 t = pd.DataFrame()
@@ -69,5 +69,5 @@ mul_lr.fit(train_x, train_y)
 
 print("Multinomial Logistic regression Train Accuracy : ", metrics.accuracy_score(train_y, mul_lr.predict(train_x)))
 print("Multinomial Logistic regression Test Accuracy : ", metrics.accuracy_score(test_y, mul_lr.predict(test_x)))
-print(classification_report(test_y, mul_lr.predict(test_x)))
+print(classification_report(test_y, mul_lr.predict(test_x), labels=np.unique(mul_lr.predict(test_x))))
 print(confusion_matrix(test_y, mul_lr.predict(test_x)))
