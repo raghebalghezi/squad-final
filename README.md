@@ -81,8 +81,8 @@ There may appear some warnings in the code; they are not affecting the code runn
 
 avg / total       0.40      0.57      0.45      7600   
 
- precision    recall  f1-score   support
 
+                 precision    recall  f1-score   support
          -1       1.00      0.99      0.99      8872
           0       0.47      0.68      0.56      4677
           1       0.63      0.54      0.58      3869
@@ -105,5 +105,4 @@ avg / total       0.40      0.57      0.45      7600
          18       0.00      0.00      0.00         1
          20       0.00      0.00      0.00         2
          21       0.00      0.00      0.00         1
-
-avg / total       0.72      0.71      0.71     26064
+                  0.72      0.71      0.71     26064
